@@ -59,8 +59,7 @@ but if you're an expert in linear algebra,
 you can actually show that if your two features are related via a linear equation like this,
 then matrix X<u>transpose X will be non-invertible.</u>
 The second thing that can cause X<u>transpose X to be non-invertible</u>
-is if you're trying to run a learning algorithm
-with a <i>lot</i> of a features.
+
 Concretely, if m is less than or equal to n.
 For example, if you imagine that you have m equals 10 training examples
 and that you have n equals 100 features, then you're trying
@@ -68,6 +67,8 @@ to fit a parameter vector theta, which is (n+1)-dimensional,
 so it's a 101-dimensional
 you're trying to fit a 101 parameters from just 10 training examples.
 And this turns out to sometimes work,
+
+there u go
 but to not always be a good idea.
 Because, as we see later, you might not have enough data
 if you only have 10 examples to fit 100 or 101 parameters.
